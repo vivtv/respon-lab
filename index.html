@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>ADIDAS Product Card</title>
+</head>
+<body>
+  <div class="container">
+    <div class="product-card">
+      <div class="product-image">
+        <img src="images/blue.png" alt="Nike Shoes" id="shoe-image">
+      </div>
+      <div class="product-details">
+        <h1>ADIDAS FEIN FLEX </h1>
+        <h2>2026 ID</h2>
+        <h3>Running Shoe</h3>
+        <p class="price">$669</p>
+        <p class="description">
+          The ADIDAS 2026 ID Running Shoe brings you lightweight, plush cushioning and a seamless upper designed to keep your foot comfortable. Select from a variety of colors and add a personal message.
+        </p>
+        <div class="color-options">
+          <button class="color-btn pink" onclick="changeColor('images/pink.png')"></button>
+          <button class="color-btn blue" onclick="changeColor('images/blue.png')"></button>
+          <button class="color-btn yellow" onclick="changeColor('images/yellow.png')"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

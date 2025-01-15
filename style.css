@@ -11,9 +11,9 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(45deg, #ff69b4, #87ceeb, #fdfd96);
+    background: linear-gradient(45deg, #f5278e, #38bcf0, #efef38);
     background-size: 300% 300%;
-    animation: gradient 6s ease infinite;
+    animation: gradient 5s ease infinite;
     font-family: Arial, sans-serif;
   }
   
@@ -113,7 +113,7 @@
   .add-to-cart:hover {
     background: #fff; /* White background on hover */
     color: #000; /* Black text on hover */
-    border: 2px solid #ff6a00; /* Keep the orange border */
+    border: 2px solid #f700ff; 
   }  
   
   .wishlist {
@@ -164,11 +164,27 @@
     }
   }
   
+  .color-options-container {
+    display: flex;
+    flex-direction: column; /* Stack label and options vertically */
+    align-items: flex-start; /* Align to the left */
+    gap: 10px;
+    margin-top: 10px; /* Adjust spacing above the container */
+    position: relative; /* Enable precise positioning */
+    top: -15px; /* Move the entire container up */
+  }
+  
+  .color-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Spacing between text and mini colors */
+  }
   .color-options {
     display: flex;
     gap: 10px;
-    margin: 15px 0; /* Adjust top and bottom spacing */
-    align-items: center; /* Align swatches vertically */
   }
   
   .color-swatch {
@@ -176,25 +192,37 @@
     height: 25px;
     border-radius: 50%;
     cursor: pointer;
-    border: 2px solid #ccc;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .color-swatch:hover {
+    border: 2px solid rgba(0, 0, 0, 0.2); /* Semi-transparent border */
+    background-clip: content-box; /* Ensures background color doesn't overlap the border */
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.color-swatch.pink {
+    background-color: #ff69b4;
+}
+
+.color-swatch.blue {
+    background-color: #87ceeb;
+}
+
+.color-swatch.yellow {
+    background-color: #fdfd96;
+}
+
+.color-swatch:hover {
     transform: scale(1.2);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  
-  .color-swatch.pink {
-    background-color: #ff69b4;
-  }
-  
-  .color-swatch.blue {
-    background-color: #87ceeb;
-  }
-  
-  .color-swatch.yellow {
-    background-color: #fdfd96;
-  }
-  
+    border-color: currentColor; /* Inherits the background color */
+}
+
+.color-swatch.pink:hover {
+    border-color: #cd4489;
+}
+
+.color-swatch.blue:hover {
+    border-color: #599bd9;
+}
+
+.color-swatch.yellow:hover {
+    border-color: #dddd4e;
+}

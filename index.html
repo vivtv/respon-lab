@@ -13,17 +13,25 @@
         <img src="images/blue.png" alt="Nike Shoes" id="shoe-image">
       </div>
       <div class="product-details">
-        <h1>ADIDAS FEIN FLEX </h1>
-        <h2>2026 ID</h2>
-        <h3>Running Shoe</h3>
+        <img src="images/logo.jpg" alt="Nike Logo" class="logo">
+        <h1>ADIDAS FEIN FLEX</h1>
+        <h2>Men's Shoe</h2>
         <p class="price">$669</p>
-        <p class="description">
-          The ADIDAS 2026 ID Running Shoe brings you lightweight, plush cushioning and a seamless upper designed to keep your foot comfortable. Select from a variety of colors and add a personal message.
+        <div class="ratings">
+          <span class="stars">★★★★☆</span>
+          <span class="review-count">(69)</span>
+        </div>
+        <p class="style-details">
+          Style: 806393-200<br>
         </p>
         <div class="color-options">
-          <button class="color-btn pink" onclick="changeColor('images/pink.png')"></button>
-          <button class="color-btn blue" onclick="changeColor('images/blue.png')"></button>
-          <button class="color-btn yellow" onclick="changeColor('images/yellow.png')"></button>
+          <span class="color-swatch pink" onclick="changeColor('images/pink.png')" title="Pink"></span>
+          <span class="color-swatch blue" onclick="changeColor('images/blue.png')" title="Blue"></span>
+          <span class="color-swatch yellow" onclick="changeColor('images/yellow.png')" title="Yellow"></span>
+        </div>
+        <button class="add-to-cart" id="add-to-cart">ADD TO CART</button>
+        <div class="wishlist">
+          <span>&hearts;</span> Save to wish list
         </div>
       </div>
     </div>
